@@ -6,13 +6,15 @@
   "scripts": {
     "dev": "NODE_ENV=development nodemon",
     "build": "rimraf dist && tsc",
-    "start": "NODE_ENV=production node ."
+    "start": "NODE_ENV=production node .",
+    "test": "rimraf dist && tsc && jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^16.7.10",
+    "jest": "^27.1.0",
     "nodemon": "^2.0.12",
     "rimraf": "^3.0.2",
     "ts-node": "^10.2.1"
